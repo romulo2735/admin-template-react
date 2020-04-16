@@ -5,15 +5,15 @@ import AnimationNotFound from './../../assets/animations/error-page-not-found.js
 const NotFound = () => {
     const bodyMovinOptions = {
         loop: true,
-        autoplay:true,
+        autoplay: true,
         prerender: true,
         animationData: AnimationNotFound
     };
 
     return (
-        <div>
-            <ReactBodyMovin options={bodyMovinOptions} />
-        </div>
+        <>
+            <ReactBodyMovin options={bodyMovinOptions}/>
+        </>
     );
 }
 
