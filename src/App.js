@@ -1,11 +1,20 @@
 import React from 'react';
+import './styles/app.css';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
-function App() {
+import Home from "./components/Home";
+import Login from "./components/Login";
+import NotFound from "./components/Errors/NotFound";
+
+export default function App() {
     return (
-        <div>
+        <Router>
+            <Switch>
+                <Route exact path="/" component={Home}/>
+                <Route exact path="/login" component={Login}/>
 
-        </div>
+                <Route exact path="*" component={NotFound}/>
+            </Switch>
+        </Router>
     );
 }
-
-export default App;
