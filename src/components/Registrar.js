@@ -3,7 +3,7 @@ import {Container, Col, Row, Form, Card, CardBody, Input, InputGroup, Button} fr
 import useClass from "../hooks/add-class";
 import {Link} from "react-router-dom";
 
-const Login = (props) => {
+const Registrar = (props) => {
   useClass('bg-blue')
   return (
       <div className={'mt-5 flex-row align-items-center'}>
@@ -13,8 +13,12 @@ const Login = (props) => {
               <Card>
                 <CardBody>
                   <Form>
-                    <h1>Login</h1>
-                    <p>Digite o email e senha para acessar! Sem cadastro? <Link to={'/novo-cadastro'} >Cadastrar-se</Link></p>
+                    <h1>Novo Usuário</h1>
+                    <p>Digite os dados socilitados <Link to={'/login'}>Login</Link></p>
+
+                    <InputGroup className={'mb-3'}>
+                      <Input type="text" placeholder="Nome"/>
+                    </InputGroup>
 
                     <InputGroup className={'mb-3'}>
                       <Input type="email" placeholder="E-mail"/>
@@ -25,11 +29,7 @@ const Login = (props) => {
                     </InputGroup>
 
                     <InputGroup className={'mb-3'}>
-                      <Button outline color={'primary'}>Acessar</Button>
-                    </InputGroup>
-
-                    <InputGroup className={'mb-3'}>
-                      <Link to={'/esqueceu-a-senha'} >Esqueceu a senha?  </Link>
+                      <Button outline color={'primary'}>Cadastrar</Button>
                     </InputGroup>
 
                   </Form>
@@ -42,4 +42,4 @@ const Login = (props) => {
   );
 }
 
-export default Login;
+export default Registrar;

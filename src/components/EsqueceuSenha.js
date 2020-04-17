@@ -3,7 +3,7 @@ import {Container, Col, Row, Form, Card, CardBody, Input, InputGroup, Button} fr
 import useClass from "../hooks/add-class";
 import {Link} from "react-router-dom";
 
-const EsqueceuSenha = () => {
+const EsqueceuSenha = (props) => {
   useClass('bg-blue')
   return (
       <div className={'mt-5 flex-row align-items-center'}>
