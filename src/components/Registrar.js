@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Container, Col, Row, Form, Card, CardBody, Input, InputGroup, Button} from 'reactstrap';
 import useClass from "../hooks/add-class";
 import {Link} from "react-router-dom";
