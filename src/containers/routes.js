@@ -1,10 +1,10 @@
-import Login from "../components/Login";
+import ComponenteTests from "../components/ComponenteTests";
 
 const Routes = () => ([
   {
     path: '',
     name: '',
-    template: Login
+    template: ComponenteTests
   }
 ]);
 
