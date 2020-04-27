@@ -8,7 +8,7 @@ export default function Header() {
           <NavbarBrand href="/">
             <img src="https://via.placeholder.com/150x50" alt=""/>
           </NavbarBrand>
-          <Nav className="mr-auto" navbar>
+          <Nav className="" navbar>
             <NavbarToggler/>
           </Nav>
         </Navbar>

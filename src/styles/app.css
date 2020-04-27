@@ -14,9 +14,9 @@ body {
   height: 100%;
   min-height: 100%; }
 
-#content-wrapper {
+.content-wrapper {
   width: 100%; }
-  #content-wrapper .content-dynamic {
+  .content-wrapper .content-dynamic {
     padding: 1em; }
 
 #sidebar {
