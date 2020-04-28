@@ -1,10 +1,10 @@
-import ComponenteTests from "../components/ComponenteTests";
+import Cards from "../components/Cards";
 
 const Routes = () => ([
   {
-    path: '',
-    name: '',
-    template: ComponenteTests
+    path: '/',
+    name: 'Cards',
+    template: Cards
   }
 ]);
 
