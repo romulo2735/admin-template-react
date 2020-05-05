@@ -2,13 +2,13 @@ import Cards from "../components/Cards";
 import Forms from "../components/Forms";
 
 const Routes = () => ([
-  // {
-  //   path: '/cards',
-  //   name: 'Cards',
-  //   template: Cards
-  // },
   {
-    path: '/',
+    path: '/cards',
+    name: 'Cards',
+    template: Cards
+  },
+  {
+    path: '/forms',
     name: 'Forms',
     template: Forms
   }

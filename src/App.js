@@ -7,6 +7,8 @@ import Login from "./pages/Login";
 import NotFound from "./components/Errors/NotFound";
 import EsqueceuSenha from "./pages/EsqueceuSenha";
 import Registrar from "./pages/Registrar";
+import Cards from './components/Cards';
+import Forms from './components/Forms';
 
 export default function App() {
   return (
@@ -15,6 +17,8 @@ export default function App() {
           <Route exact path="/login" name={'Login'} render={props => <Login {...props} />}/>
           <Route exact path="/esqueceu-a-senha" name={'Redefinir Senha'} render={props => <EsqueceuSenha {...props} />}/>
           <Route exact path="/novo-cadastro" name={'Novo Cadastro'} render={props => <Registrar {...props} />}/>
+          <Route exact path="/cards" name={'Cards'} render={props => <Cards {...props} />} />
+          <Route exact path="/forms" name={'Forms'} render={props => <Forms {...props} />} />
           <Route exact path="/" name={'Home'} render={props => <AppLayout {...props} />} />
 
           <Route exact path="*" component={NotFound}/>
