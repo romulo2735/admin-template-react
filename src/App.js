@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/app.css';
-import {BrowserRouter as Router, Redirect, Switch, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 import {ToastProvider} from 'react-toast-notifications';
 import { ToastCustom } from './components/ToastCustom';

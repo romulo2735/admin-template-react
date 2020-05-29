@@ -15,7 +15,7 @@ import {
 import { useForm } from "react-hook-form";
 
 export default function Forms() {
-  const { handleSubmit, watch, errors, register } = useForm();
+  const { errors, register } = useForm();
   const { addToast } = useToasts();
 
   function onSubmit(data) {

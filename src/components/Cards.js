@@ -34,7 +34,9 @@ export default function Cards() {
           <Col xs={12} sm={6} md={4}>
             <Card>
               <CardHeader className="text-right">
-                <a href="#" onClick={toggleCard}><FontAwesomeIcon icon="arrow-down"/></a>
+                <button type="submit"  onClick={toggleCard}>
+                  <FontAwesomeIcon icon="arrow-down"/>
+                  </button>
               </CardHeader>
               <Collapse isOpen={cardOpen}>
                 <CardBody>
