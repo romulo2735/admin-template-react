@@ -51,7 +51,7 @@ export default function Charts() {
       <Row>
         <Col xs={12} sm={6} md={4}>
           <Card>
-            <CardHeader>Charts</CardHeader>
+            <CardHeader>Chart Bar</CardHeader>
             <CardBody>
               <Bar data={dataBar} width={100} height={80} />
             </CardBody>
@@ -59,7 +59,7 @@ export default function Charts() {
         </Col>
         <Col xs={12} sm={6} md={4}>
           <Card>
-            <CardHeader>Charts</CardHeader>
+            <CardHeader>Chart Pie</CardHeader>
             <CardBody>
               <Pie data={dataPie} width={100} height={80} />
             </CardBody>
