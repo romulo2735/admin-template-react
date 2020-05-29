@@ -1,17 +1,17 @@
 import Cards from "../components/Cards";
 import Forms from "../components/Forms";
 
-const Routes = () => ([
+const Routes = () => [
   {
-    path: '/cards',
-    name: 'Cards',
-    template: Cards
+    path: "/cards",
+    name: "Cards",
+    template: Cards,
   },
   {
-    path: '/forms',
-    name: 'Forms',
-    template: Forms
-  }
-]);
+    path: "/forms",
+    name: "Forms",
+    template: Forms,
+  },
+];
 
 export default Routes();

@@ -10,12 +10,13 @@ import Registrar from "./pages/Registrar";
 import Cards from './components/Cards';
 import Forms from './components/Forms';
 import {ToastProvider} from 'react-toast-notifications';
+import { ToastCustom } from './components/ToastCustom';
 
 export default function App() {
   return (
       <Router>
         <Switch>
-          <ToastProvider>
+          <ToastProvider components={{ Toast:ToastCustom }}>
             <Route exact path="/login" name="Login" render={props => <Login {...props} />}/>
             <Route exact path="/esqueceu-a-senha" name="Redefinir Senha" render={props => <EsqueceuSenha {...props} />}/>
             <Route exact path="/novo-cadastro" name="Novo Cadastro" render={props => <Registrar {...props} />}/>
